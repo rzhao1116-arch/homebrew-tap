@@ -1,8 +1,8 @@
 class CodexAgents < Formula
   desc "Codex agent bundle with orchestrator routing skill and lifecycle CLI"
   homepage "https://github.com/rzhao1116-arch/codex-agents"
-  url "https://github.com/rzhao1116-arch/codex-agents/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "338fec4c56d93ea39b0c14bdf86769287562c348a0f52b5f8c7f6eeb57059bbc"
+  url "https://github.com/rzhao1116-arch/codex-agents/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "f20e745553541502eec0063edf9d99a75f3c24111cee346900fad1958ee9e72f"
   license "MIT"
 
   depends_on "python@3.13"
@@ -22,7 +22,7 @@ class CodexAgents < Formula
     doctor_json = shell_output("#{bin}/codex-agents doctor --target #{target} --json")
     assert_match "\"orchestrator_routing_skill\": {", doctor_json
     assert_match "\"present\": true", doctor_json
-    assert_path_exists target/"agents/orchestrator.md"
+    assert_path_exists target/"agents/orchestrator.toml"
     assert_path_exists target/"skills/orchestrator-routing/SKILL.md"
   end
 end
