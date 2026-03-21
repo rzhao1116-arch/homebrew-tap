@@ -1,8 +1,8 @@
 class CodexAgents < Formula
   desc "Codex agent bundle with orchestrator routing skill and lifecycle CLI"
   homepage "https://github.com/rzhao1116-arch/codex-agents"
-  url "https://github.com/rzhao1116-arch/codex-agents/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "f20e745553541502eec0063edf9d99a75f3c24111cee346900fad1958ee9e72f"
+  url "https://github.com/rzhao1116-arch/codex-agents/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "300c85af51e1ec921eb979a1dbdac9872035882fdfdb180e438e3b97d5a0a8e7"
   license "MIT"
 
   depends_on "python@3.13"
